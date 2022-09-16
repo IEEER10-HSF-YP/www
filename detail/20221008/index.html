@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Nobuo Aoki (IEEE HSF 1st VC Officer)">
     <title>:: Social Event in Tokushima : IEEE HSF Caravan Series::</title>
-    <link rel="stylesheet" type="text/css" href="sytle.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../js/crawler.js"></script>
 </head>
 
 <div class="inner">
@@ -59,21 +61,29 @@
                 <h5 class="orange">The 1st Event on IEEE HSF Caravan Series</h5>
                 <tbody>
                 <tr>
-                    <td class="time">13:30-13:45</td>
+                    <td class="time">14:00-14:20</td>
                     <td class="normal" colspan="4">
-                        集合: 集まり次第全員で移動開始予定(30分から40分の移動時間)
+                        受付, 集合時間
                     </td>
                 </tr>
                 <tr>
-                    <td class="time">集合場所</td>
+                    <td class="time">集合</td>
                     <td class="normal" colspan="4">
-                        <p class="room">建物名</p>
-                        <p class="points">住所</p>
+                        <p class="room">徳島駅</p>
+                        <p class="points">〒770-0831 徳島県徳島市寺島本町西１丁目６１</p>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="time">14:40-16:10</td>
+                    <td class="time">移動</td>
+                    <td class="normal" colspan="4">
+                        <p class="room">見学地へ移動</p>
+                        <p class="points">汽車利用 実費 260円（高徳線 板野行き）</p>
+                    </td>
+                </tr>
+
+                <tr class="gray">
+                    <td class="time">15:00-16:10</td>
                     <td class="normal" colspan="4">
                         酒蔵見学, ネットワーキング
                     </td>
@@ -81,22 +91,30 @@
                 <tr>
                     <td class="time">見学先</td>
                     <td class="normal" colspan="4">
-                        <p class="room">建物名</p>
-                        <p class="points">住所</p>
+                        <p class="room">本家松浦酒造 ナルトタイの店</p>
+                        <p class="points">〒779−0303　徳島県鳴門市大麻町池谷字柳の本19番地</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="time">移動</td>
+                    <td class="normal" colspan="4">
+                        <p class="room">見学地から移動</p>
+                        <p class="points">汽車利用 実費 260円（高徳線 板野行き）</p>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="time">17:00</td>
                     <td class="normal" colspan="4">
-                        解散: 酒蔵から全員で移動予定
+                        解散
                     </td>
                 </tr>
                 <tr>
-                    <td class="time">解散場所</td>
+                    <td class="time">解散</td>
                     <td class="normal" colspan="4">
-                        <p class="room">徳島大学</p>
-                        <p class="points">住所</p>
+                        <p class="room">徳島駅</p>
+                        <p class="points">〒770-0831 徳島県徳島市寺島本町西１丁目６１</p>
                     </td>
                 </tr>
 
@@ -117,13 +135,45 @@
             <br>
         </div>
 
+        <!-- バナーサイズ 280*100 推奨 -->
+        <div class="banner_slide_wrap">
+            <div class="banner_slider">
+                <ul class="marquee" id="gsefSpan1" >
+                    <li><a href="" rel="noopener noreferrer" target="_blank"><img src="../../img/common_logo/ieee_yp.png" alt=""></a></li>
+                    <li><a href="" rel="noopener noreferrer" target="_blank"><img style="background-color: #000000" src="img/logo_narutotai.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+            marqueeInit({
+                uniqueid: 'gsefSpan1',
+                style: {
+                    'margin-left': '10px',
+                    'margin-bottom': '0px',
+                    'padding': '0px',
+                    'width': '100%',
+                    'height': '100px'
+                },
+                inc: 2, //speed - pixel increment for each iteration of this marquee's movement
+                mouse: 'pause', //mouseover behavior ('pause' 'cursor driven' or false)
+                moveatleast: 1,
+                neutral: 150,
+                savedirection: true
+            });
+        </script>
+
+        <div>
+            <br>
+            <br>
+        </div>
+
         <div id="footer">
             <div id="footer_content">
                 <div class="address">
                     <address>
                         <strong>IEEE Hiroshima, Shikoku and Fukuoka Joint Sections, Young Professionals Affinity Group</strong><br>
                         E-mail : これから割り当て<br> <br>
-                        Representative Officer in Social Event : Treasurer Takahumi Katayama (Tokushima University)
+                        Representative Officer on This Event : Treasurer Takahumi Katayama (Tokushima University)
                         <p>COPYRIGHT (C)  IEEE Hiroshima, Shikoku and Fukuoka Joint Sections, Young Professionals Affinity Group ALL RIGHTS RESERVED. </p>
                     </address>
                 </div>
