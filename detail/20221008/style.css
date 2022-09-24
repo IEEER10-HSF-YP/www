@@ -7,7 +7,25 @@ body{
     max-width: 100%;
     margin: 0 auto;
     padding: 10px;
-    text-align:center;}
+    }
+/* Latest Safari */
+_::-webkit-full-page-media, _:future, :root body{
+    width: 1200px; /* 好きな幅 */
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align:center;
+   }
+/* Old Safari */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    ::i-block-chrome, body {
+        width: 1200px; /* 好きな幅 */
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        text-align:center;
+    }
+}
 
 /* sub */
 .subvisual {
