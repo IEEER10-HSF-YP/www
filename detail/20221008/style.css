@@ -2,7 +2,7 @@
 .topimage {width: 1200px;}
 
 /* all */
-.inner {
+body{
     width: 1200px; /* 好きな幅 */
     max-width: 100%;
     margin: 0 auto;
