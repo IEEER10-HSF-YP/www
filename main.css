@@ -1,0 +1,667 @@
+/* -------------------------------------------共通------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    -webkit-appearance: none;
+}
+/* ----------------------メニュー欄について---------------------- */
+
+.top-banner {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    list-style: none;
+    justify-content: space-around;
+}
+.top-banner li {
+    width: calc(100%/4); /* 4para*/
+    padding:0 1px;
+    box-sizing:border-box;
+}
+.top-banner li img {
+    max-width:100%;
+    height: 75%;
+    border-style:none;
+}
+.container{
+    z-index: 0;
+    display: flex;
+    justify-content: flex-end;
+    /* background: rgb(0, 0, 0, 0.3); */
+    background-color: white; /* white */
+    padding: 5px;
+    margin: -75px auto 0px 0px;
+    /* padding-left: 5px; */
+}
+.item{
+    width: 100px;
+    height: 40px;
+    margin: 50px 40px 0 0;
+    /* margin: 50px 20px 0 0; */
+}
+.item:hover{
+    background: tomato;
+    border-radius: 3px;
+}
+.text{
+    line-height: 40px;          
+    text-align: center;
+    font-weight: bold;
+    /* color: white; */
+    color: #000055;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
+/* -----🍔ハンバーガーメニューについて----- */
+#menu-btn-check {
+    display: none;
+}
+div.menu-content{
+    position: absolute;
+    left: -100vw;
+}
+/* aside{
+    position: absolute;
+    left: -100vw;
+} */
+/* ----------------------indexページ---------------------- */
+div.page_title{
+    margin-top: 4px;
+    text-align: center;
+    font-size: 2.5em;
+}
+/* -----スライダーについて----- */
+.slider{
+    margin: 1em auto;
+    width: 80%;
+    opacity: 0;
+}
+.slick-initialized{
+    opacity: 1
+}
+.slider img{
+    height: auto;
+    width: 100%;
+}
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+    color: gray;
+}
+div.index_message{
+    /* text-align: center; */
+    margin: 5%;
+    font-size: 1em;
+}
+div.index_message_title{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+/* -----index_newsについて----- */
+.News {
+    /* margin-top: 22em; */
+    font-size: larger;
+    color: rgba(0, 0, 0);
+    text-align: center;
+}
+.News_content {
+    margin-left: auto;
+    margin-right: auto;
+    /* line-height: 2.5em; */
+    width: 65%;
+    height: 360px;
+    overflow: scroll;
+    border: rgba(0, 0, 0, 0.5) 3px solid;
+  }
+.News_content p{
+    margin-left: 1em;
+    font-size: large;
+    text-decoration: none;
+}
+.News_content_content{
+    margin-left: 4em;
+    font-size: large;
+}
+.News_content p1{
+    color: red;
+}
+.News_content a{
+    color:black;
+}
+.News_content a:hover{
+    text-decoration:underline;
+}
+.News_content time{
+    text-decoration: underline;
+}
+/* -----index_contact----- */
+div.index_contact{
+    text-align: center;
+}
+
+/* ----------------------Aboutページ---------------------- */
+/* -----video----- */
+video.video{
+    width: 80%;
+    max-width: 600px;
+  }
+div.about_kitagawa{
+    text-align: center;
+}
+div.about_kitagawa a:hover{
+    text-decoration: underline;
+}
+div.about_video{
+    text-align: center;
+}
+/* -----メッセージ----- */
+div.about_message{
+    margin: 0 10%;
+}
+/* -----魅力やQ&Aなど----- */
+div.about_sub_main{
+    margin: 0 10%;
+}
+div.about_subtitle{
+    text-align: center;
+    font-size: 2em;
+    font-family: "Osaka";
+    color: #005FFF;
+}
+ul.about_attraction_contents{
+    margin: 0 1em;
+    list-style-type: none;
+}
+ol.about_question_contents{
+    margin: 0 1em;
+    /* color: #005FFF; */
+}
+li.about_question_contents_question{
+    font-size: 1.25em;
+    color: #005FFF;
+    margin: 0 1em;
+}
+div.about_question_contents_answer a:hover{
+    text-decoration: underline;
+}
+div.about_question_contents_answer_member{
+    margin: 0 1em;
+}
+div.about_question_contents_answer_member p{
+    text-decoration: underline;
+}
+div.about_question_contents_answer_benefits{
+    margin-left: 1em;
+}
+div.about_question_contents_answer_mail{
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.25em;
+}
+div.about_question_contents_answer_mail_add{
+    text-align: center;
+    font-size: 1em;
+}
+/* ----------------------Membersページ---------------------- */
+#member {
+    background: #e0e0e0;
+}
+#member .year-ber {
+    background: #3584bb;
+    color: #e0e0e0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+}
+#member .past-year-ber {
+    background: #3584bb;
+    color: #e0e0e0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#member .inner {
+    width: 1000px; /* 好きな幅 */
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 24px;
+    /*background: #fff59d テスト*/;
+}
+
+#member h2 {
+    margin: 0 0 24px;
+}
+
+#member table {
+    width: 80%;
+    margin: auto;
+}
+
+#member td {
+    padding: 5px 8px;
+    width: 40%;
+    text-align: center;
+}
+#member th {
+    padding: 5px 8px;
+    width: 20%;
+    text-align: center;
+}
+
+
+.link-text:hover {
+    color: #e0e0e0;
+    background: #3584bb;
+}
+
+
+
+
+
+div.members_left{
+    text-align: center;
+    flex: 1;
+}
+div.members_right{
+    text-align: center;
+    flex: 1;
+}
+ul.members_members{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul.members_members img{
+    width: 50%;
+}
+li.members_members_name{
+    font-size: 1.5em;
+}
+div.members_members_name_url a{
+    color: black;
+}
+div.members_members_name_url a:hover{
+    text-decoration: underline;
+}
+div.members2020{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.25em;
+}
+/* ----------------------Activitiesページ---------------------- */
+div.activities_name{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2em;
+}
+div.activities_year{
+    width: 80%;
+    margin: 1em auto 0 auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+table.activities_activities{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+table.activities_activities td{
+    width: 50%;
+    /* border: solid 1px #aaaaaa; */
+}
+td.activities_activities_photo{
+    padding: 2em;
+}
+div.activities_activities_sentence_title{
+    font-size: 1.25em;
+    font-weight: bold;
+}
+div.activities_activities_sentence_title a,
+div.activities_activities_sentence_sponsor a{
+    color: black;
+}
+div.activities_activities_sentence_title a:hover,
+div.activities_activities_sentence_sponsor a:hover{
+    text-decoration: underline;
+}
+div.activities_activities_sentence_date_place{
+    margin-top: 1em;
+}
+div.activities_activities_sentence_content a:hover{
+    text-decoration: underline;
+}
+div.activities_report{
+    margin-top: 1em;
+}
+div.activities_report a:hover{
+   text-decoration: underline;
+}
+/* ----------------------Linksページ---------------------- */
+div.links{
+    width: 90%;
+    margin: 0 auto;
+}
+div.links_kansai_yp{
+    font-size: 1.25em;
+}
+/* div.links_ieee{
+    list-style: none;
+    font-size: 1.25em;
+} */
+div.links_ieee_affiliation{
+    font-size: 1.25em;
+    font-weight: bold;
+}
+ul.links_ieee{
+    list-style: none;
+    font-size: 1.25em;
+    margin-left: 1em;
+}
+ul.links_ieee a{
+    color: black;
+    border-bottom: solid 0.125em #149bdf;
+}
+ul.links_ieee a:hover{
+    background-color: #149bdf;
+    color: white;
+    border-bottom: none;
+}
+/* ----------------------Posterページ---------------------- */
+div.poster{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.25em;
+}
+ul.poster{
+    list-style: none;
+}
+li.poster_photo img{
+    width: 40%;
+    max-width: 300px;
+}
+/* ----------------------各活動報告ページ---------------------- */
+div.report{
+    width: 90%;
+    margin: 0 auto;
+}
+li.report_contents_title{
+    list-style: none;
+    font-size: 1.25em;
+}
+div.report_contents_title_contents{
+    margin: 0 2em;
+}
+div.report_contents_title_contents p1{
+    margin-left: 1em;
+}
+div.report_contents_title_contents a{
+    color: black;
+}
+div.report_contents_title_contents a:hover{
+    text-decoration: underline;
+}
+div.report_contents_contents{
+    margin: 0 2em;
+}
+div.report_contents_contents p1{
+    margin-left: 1em;
+}
+div.report_photo{
+    margin: 1em auto;
+    text-align: center;
+}
+/*---Raspberry Piページ*/
+div.raspberrypi_setting{
+    width: 90%;
+    margin: 0 auto;
+}
+div.raspberrypi_setting h2{
+    color: orange;
+}
+div.raspberrypi_setting_outline{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+ol.raspberrypi_setting_contents li{
+    list-style: none;
+}
+ol.raspberrypi_setting_contents p{
+    padding: 0em 1em 0.5em 1em;
+}
+div.raspberrypi_setting_outline a:hover{
+    text-decoration: underline;
+}
+div.raspberrypi_setting_contents{
+    margin: 0 2em;
+}
+div.raspberrypi_setting_contents a:hover{
+    text-decoration: underline;
+}
+/* ----------------------footer---------------------- */
+#footer {
+    /* background: #E8EEF4; */
+    background-color: white;
+    color: #7c8081;
+    /* padding: 5em 5em 5em 5em; */
+    padding: 3em;
+    text-align: center;
+}
+
+    #footer .copyright {
+        padding: 1em;
+        font-size: 0.8em;
+        line-height: 1em;
+    }
+
+        #footer .copyright a {
+            color: inherit;
+            border-bottom: dotted 1px;
+        }
+
+        #footer .copyright li {
+            display: inline-block;
+            margin-left: 1em;
+            padding-left: 1em;
+            border-left: dotted 1px;
+        }
+
+            #footer .copyright li:first-child {
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+/* ------------------------------------max-width:1024px------------------------------------ */
+@media screen and (max-width:1024px){
+    div.page_title{
+        padding-top: 0.5em;
+        /* margin-top: 30%; */
+        font-size: 2em;
+    }
+}
+/* ------------------------------------max-width:800px------------------------------------ */
+@media screen and (max-width:800px){
+    .container{
+        display: none;
+    }
+    main{
+        width: 100%;
+        padding-top: 50px;
+    }
+/* -----🍔ハンバーガーメニューについて----- */
+.menu-btn {
+    /* positionをfixedなどにしたらどうなるか */
+    position: absolute;
+    top: 10px;
+    /* メニューボタンを左右のどっちにやるか */
+    /* right: 10px; */
+    left: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #3584bb;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #3584bb;
+    transition: all 0.5s;/*アニメーション設定*/
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+/* ボタンのタップによってメニューが表示 */
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}
+/* ----------------------indexページ---------------------- */
+div.index_message{
+    /* text-align: center; */
+    margin: 10%;
+}
+/* -----index_news----- */
+.News_content {
+    line-height: normal;
+    width: 80%;
+    /* font-weight: normal; */
+  }
+  .News_content p{
+    margin-left: 1em;
+    font-size: 1em;
+}
+  .News_content_content{
+      margin-left: 2em;
+      font-size: 1em;
+  }
+/* ----------------------Aboutページ---------------------- */
+div.about_question_contents_answer_mail{
+    font-size: 1em;
+}
+/* ----------------------Membersページ---------------------- */
+li.members_members_name{
+    font-size: 1em;
+}
+div.members2020{
+    font-size: 1em;
+}
+
+/* ----------------------Activitiesページ---------------------- */
+div.activities_name{
+    font-size: 1.5em;
+}
+table.activities_activities td{
+    width: 100%;
+    display: block;
+}
+td.activities_activities_photo{
+    padding: 0em;
+    padding-top: 2em;
+}
+td.activities_activities_sentence{
+    padding-bottom: 1em;
+}
+div.activities_activities_sentence_title{
+    font-size: 1em;
+}
+div.activities_activities_sentence_date_place{
+    margin-top: 0em;
+}
+div.activities_report{
+    margin-top: 0em;
+}
+/* ----------------------各活動報告ページ---------------------- */
+li.report_contents_title{
+    font-size: 1em;
+}
+div.report_photo img{
+    width: 80%;
+}
+/* ----------------------Linksページ---------------------- */
+ul.links_ieee{
+    font-size: 1em;
+}
+/* ----------------------Posterページ---------------------- */
+div.poster{
+    font-size: 1em;
+}
+/* ----------------------footerについて（１番下に書く）---------------------- */
+#footer { 
+    padding: 3em 1.5em;
+    }
+     #footer .copyright li {
+        display: block;
+        margin: 1em 0 0 0;
+        padding: 0;
+        border: 0;
+    }
+}
