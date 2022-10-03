@@ -12,18 +12,42 @@ body {
     text-align: center;
 }
 
-.cols {
+.twocols {
     display: flex;
     flex-wrap: wrap;
 }
-.cols div {
+.twocols div {
     width: 50%;
     box-sizing: border-box;
     text-align: left;
 }
+.twocols-center {
+    display: flex;
+    flex-wrap: wrap;
+}
+.twocols-center div {
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.fourcols {
+    display: flex;
+    flex-wrap: wrap;
+}
+.fourcols div {
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 1% auto;
+}
 
 #img-geust {
     width: 300px;
+    border-radius: 50%;
+}
+#img-committee {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
 }
 
@@ -38,9 +62,8 @@ body {
 
 /* non-common */
 #subvisual4 {
-    background-image: url('img/test.png');
+    background-image: url('img/venue_overview.png');
     opacity: 0.9;
-    /*透過75% 横幅1200のワイド版を利用*/
 }
 
 
@@ -52,18 +75,6 @@ body {
     margin: 0 auto;
     padding: 110px 0 0 0;
     box-sizing: border-box;
-
-    /* 枠付き文字用 // カラーコードのチューニングが必要*/
-    /*
-    font-weight: bold;
-    font-size: 70px;
-    color: rgba(0, 0, 0, 0);
-    text-shadow: 3px 3px 0 #55ddc9;
-    -webkit-text-stroke: 1px #538fb9;
-    text-stroke: 1px #888;
-    */
-
-
 }
 
 .sub_txt h4 {
@@ -73,14 +84,6 @@ body {
     line-height: 22px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-
-    /*
-    display: inline-block;
-    color: #ffffff;
-    font-weight: bold;
-    -webkit-text-stroke: 1px #ffffff;
-    text-stroke: 1px #ffffff;
-    */
 }
 
 .sub_txt h3 {
@@ -90,14 +93,6 @@ body {
     line-height: 70px;
     letter-spacing: -0.05em;
     margin: 0 0 0 0;
-
-    /*
-    display: inline-block;
-    color: #ffffff;
-    font-weight: bold;
-    -webkit-text-stroke: 1px #53b9b9;
-    text-stroke: 1px #ffffff;
-     */
 }
 
 .sub_txt p {
@@ -130,8 +125,11 @@ body {
 /* program */
 .sky-blue {
     background: #0072BC;
+    text-align: center;
+}
+.sky-blue a {
+    text-decoration: none;
     color: #f2f2f2;
-    text-align: center
 }
 
 .program table tbody td.time {
