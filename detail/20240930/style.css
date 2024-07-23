@@ -208,3 +208,14 @@ body {
 .registration {
     text-align: center;
 }
+
+.banner_slide_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.banner_slider {
+    text-align: center;
+}
