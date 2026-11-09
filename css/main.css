@@ -8,23 +8,22 @@ body{
     -webkit-appearance: none;
 }
 /* ----------------------メニュー欄について---------------------- */
-
-.top-banner {
+.banner-header{
+    z-index: 0;
     display: flex;
-    flex-wrap: nowrap;
-    background-color: white;
-    list-style: none;
     justify-content: space-around;
+    background-color: white;
+    padding: 5px;
+    margin: 0px auto -40px 0px;
 }
-.top-banner li {
-    width: calc(100% / 4 - 2px); /* 4para*/
-    padding:0 1px;
-    box-sizing:border-box;
+.banner-header-left{
+    text-align: left;
 }
-.top-banner li img {
-    max-width:100%;
-    height: 75%;
-    border-style:none;
+.banner-header-right{
+    text-align: right;
+}
+.log-vw{
+    width: 25vw;
 }
 .container{
     z-index: 0;
@@ -209,6 +208,18 @@ div.about_question_contents_answer_mail_add{
     font-size: 1em;
 }
 /* ----------------------Membersページ---------------------- */
+div.mem_table{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+div.members{
+    display: flex;
+    margin: 0 auto;
+}
+
+
+
 #member {
     background: #e0e0e0;
 }
@@ -228,7 +239,7 @@ div.about_question_contents_answer_mail_add{
     margin-bottom: 10px;
 }
 #member .inner {
-    width: 1000px; /* 好きな幅 */
+    width: 520px; /* 好きな幅 */
     max-width: 100%;
     margin: 0 auto;
     padding: 24px;
@@ -236,25 +247,9 @@ div.about_question_contents_answer_mail_add{
 }
 
 #member h2 {
+    text-align: center;
     margin: 0 0 24px;
 }
-
-#member table {
-    width: 80%;
-    margin: auto;
-}
-
-#member td {
-    padding: 5px 8px;
-    width: 40%;
-    text-align: center;
-}
-#member th {
-    padding: 5px 8px;
-    width: 20%;
-    text-align: center;
-}
-
 
 .link-text:hover {
     color: #e0e0e0;
@@ -614,7 +609,6 @@ li.members_members_name{
 div.members2020{
     font-size: 1em;
 }
-
 /* ----------------------Activitiesページ---------------------- */
 div.activities_name{
     font-size: 1.5em;
